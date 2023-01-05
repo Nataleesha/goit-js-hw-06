@@ -6,11 +6,11 @@ const increaseBtn = document.querySelector('button[data-action=increment]');
 
 decreaseBtn.addEventListener('click', () => {
     counterValue -= 1;
-    counterEl.innerHTML = counterValue;
+    counterEl.textContent = counterValue;
 })
 
 increaseBtn.addEventListener('click', () => {
     counterValue += 1;
-    counterEl.innerHTML = counterValue;
+    counterEl.textContent = counterValue;
 })
 
