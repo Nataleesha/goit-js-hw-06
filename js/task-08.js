@@ -1,23 +1,23 @@
-const formEl = document.querySelector('.login-form');
+const formEl = document.querySelector(".login-form");
 
-formEl.addEventListener('submit', onFormSubmit);
+formEl.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const formData = {};
+  const formData = {};
 
-    for (let element of formEl.elements) {
-        if (element.tagName.toLowerCase() === 'input') {
-            if (element.value.length === 0) {
-                alert('Please fill in the field');
-                return;
-            }
-            formData[element.name] = element.value;
-        }
+  for (let element of formEl.elements) {
+    if (element.tagName.toLowerCase() === "input") {
+      if (element.value.length === 0) {
+        alert("Please fill in the field");
+        return;
+      }
+      formData[element.name] = element.value;
     }
+  }
 
-    console.log(formData);
+  console.log(formData);
 
-    formEl.reset();
+  formEl.reset();
 }

@@ -15,16 +15,16 @@ const images = [
 
 const imageGalleryEl = document.querySelector(".gallery");
 
-let gallery = '';
+let gallery = "";
 
 images.forEach((image) => {
   const imageItemEl = document.createElement("li");
   const img = document.createElement("img");
-  img.classList.add('img');
+  img.classList.add("img");
   img.src = image.url;
   img.alt = image.alt;
   imageItemEl.append(img);
   gallery += imageItemEl.innerHTML;
 });
 
-imageGalleryEl.insertAdjacentHTML('beforeend', gallery);
+imageGalleryEl.insertAdjacentHTML("beforeend", gallery);
