@@ -24,4 +24,5 @@ createButton.addEventListener("click", () => {
 
 destroyButton.addEventListener("click", () => {
   boxes.innerHTML = "";
+  enteredNumber.value = null;
 });
